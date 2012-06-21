@@ -1,0 +1,14 @@
+Arduino Parallel Eprom Reader
+
+Read a parallel eprom using two Arduinos.
+
+Based on code from arduino forum http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1269280823.
+
+Arduinos communicate with each other using I2C.	
+
+Implemented Arduino I2C communication because I don't have a 
+Arduino Mega board, not even a demux :( , and because was fun :).
+
+Master Arduino writes the address in the 16 input ports
+and sends a signal to slave Arduino who reads the output 
+in the 8 output ports and sends data to computer.
