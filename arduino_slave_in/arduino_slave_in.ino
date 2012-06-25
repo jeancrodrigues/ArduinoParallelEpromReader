@@ -34,7 +34,8 @@ void receiveData(int maxdata)
     //receive address
     int c = Wire.read();
     //print output to serial
-    Serial.print(readInput(), HEX); 
+   
+    Serial.println(readInput(), HEX); 
   }
 }
 
